@@ -1,0 +1,11 @@
+{% raw %}{% extends 'base.html' %}
+
+{% block title %}
+    Login Success
+{% endblock %}
+
+{% block content %}
+    <h1>You have been login</h1>
+    <a href="{% url 'auth:logout' %}">Logout</a>
+{% endblock %}
+{% endraw %}

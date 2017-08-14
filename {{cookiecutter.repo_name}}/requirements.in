@@ -1,0 +1,24 @@
+# Core
+Django
+django-environ
+
+# Image
+Pillow
+
+# Django REST framework and JSON Web Token Authentication
+djangorestframework
+djangorestframework-jwt
+
+# Debugging only on Local environment
+django-debug-toolbar
+django-extensions
+
+# postgres adapter
+psycopg2
+
+# Production running
+gunicorn
+gevent
+
+# Header for API
+django-cors-headers
