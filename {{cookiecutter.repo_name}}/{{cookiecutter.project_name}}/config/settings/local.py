@@ -22,7 +22,7 @@ MIDDLEWARE += [
 
 # Database configuration
 DATABASES = {
-    'default': env.db("DATABASE_URL", default="postgres://postgres:postgres@localhost:5432/{{cookiecutter.project_name}}")
+    'default': env.db("DATABASE_URL", default="postgres://postgres:postgres@localhost:5432/{{cookiecutter.database_name}}")
 }
 DATABASES['default']['ATOMIC_REQUESTS'] = True
 
