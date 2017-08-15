@@ -1,0 +1,22 @@
+FROM python:3.6
+ENV PYTHONUNBUFFERED 1
+
+# Install requirement to compile messages
+RUN apt-get update && apt-get install -y gettext libgettextpo-dev
+
+# Creating working directory
+RUN mkdir /source
+WORKDIR /source
+
+# Copying requirements
+COPY ./requirements.txt .
+RUN pip install -r requirements.txt
+
+# Copying manage.py file
+COPY ./manage.py .
+
+# Copying source
+COPY {{cookiecutter.project_name}} ./{{cookiecutter.project_name}}
+
+# Compile messages for translation
+RUN python manage.py compilemessages

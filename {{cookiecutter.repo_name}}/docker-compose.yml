@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+
+  backend:
+    container_name: backend
+    build:
+      context: .
+      dockerfile: DockerFileBackend
+    command: gunicorn --bind 0.0.0.0:8000 --timeout 6000 {{cookiecutter.project_name}}.config.wsgi:application --log-level=INFO
+    ports:
+      - "8000:8000"
+    environment:
+      - DJANGO_SETTINGS_MODULE={{cookiecutter.project_name}}.config.settings.production
