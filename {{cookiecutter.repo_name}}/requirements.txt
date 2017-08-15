@@ -4,20 +4,29 @@
 #
 #    pip-compile --output-file requirements.txt requirements.in
 #
+boto3==1.4.6              # via django-s3-folder-storage
+botocore==1.6.1           # via boto3, s3transfer
+collectfast==0.5.2
 django-cors-headers==2.1.0
 django-debug-toolbar==1.8
 django-environ==0.4.3
 django-extensions==1.8.1
+django-s3-folder-storage==0.5
+django-storages==1.6.5    # via collectfast, django-s3-folder-storage
 django==1.11.4
 djangorestframework-jwt==1.11.0
 djangorestframework==3.6.3
+docutils==0.14            # via botocore
 gevent==1.2.2
 greenlet==0.4.12          # via gevent
 gunicorn==19.7.1
+jmespath==0.9.3           # via boto3, botocore
 olefile==0.44             # via pillow
 pillow==4.2.1
 psycopg2==2.7.3
 pyjwt==1.5.2              # via djangorestframework-jwt
+python-dateutil==2.6.1    # via botocore
 pytz==2017.2              # via django
-six==1.10.0               # via django-environ, django-extensions
+s3transfer==0.1.10        # via boto3
+six==1.10.0               # via django-environ, django-extensions, python-dateutil
 sqlparse==0.2.3           # via django-debug-toolbar
