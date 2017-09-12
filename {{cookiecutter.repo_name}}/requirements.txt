@@ -13,9 +13,9 @@ django-environ==0.4.3
 django-extensions==1.8.1
 django-s3-folder-storage==0.5
 django-storages==1.6.5    # via collectfast, django-s3-folder-storage
-django==1.11.4
+django==1.11.5
 djangorestframework-jwt==1.11.0
-djangorestframework==3.6.3
+djangorestframework==3.6.4
 docutils==0.14            # via botocore
 gevent==1.2.2
 greenlet==0.4.12          # via gevent
