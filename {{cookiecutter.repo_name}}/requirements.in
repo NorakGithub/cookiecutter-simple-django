@@ -7,7 +7,6 @@ Pillow
 
 # Django REST framework and JSON Web Token Authentication
 djangorestframework
-djangorestframework-jwt
 
 # Debugging only on Local environment
 django-debug-toolbar
@@ -22,7 +21,3 @@ gevent
 
 # Header for API
 django-cors-headers
-
-# AWS S3
-django-s3-folder-storage
-Collectfast
