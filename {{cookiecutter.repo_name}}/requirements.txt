@@ -4,29 +4,66 @@
 #
 #    pip-compile --output-file requirements.txt requirements.in
 #
-boto3==1.4.6              # via django-s3-folder-storage
-botocore==1.6.1           # via boto3, s3transfer
+boto3==1.4.6
+    # via django-s3-folder-storage
+botocore==1.6.1
+    # via
+    #   boto3
+    #   s3transfer
 collectfast==0.5.2
+    # via -r requirements.in
 django-cors-headers==2.1.0
+    # via -r requirements.in
 django-debug-toolbar==1.8
+    # via -r requirements.in
 django-environ==0.4.3
+    # via -r requirements.in
 django-extensions==1.8.1
+    # via -r requirements.in
 django-s3-folder-storage==0.5
-django-storages==1.6.5    # via collectfast, django-s3-folder-storage
+    # via -r requirements.in
+django-storages==1.6.5
+    # via
+    #   collectfast
+    #   django-s3-folder-storage
 django==1.11.5
+    # via
+    #   -r requirements.in
+    #   collectfast
+    #   django-debug-toolbar
+    #   django-environ
 djangorestframework-jwt==1.11.0
+    # via -r requirements.in
 djangorestframework==3.6.4
-docutils==0.14            # via botocore
+    # via -r requirements.in
+docutils==0.14
+    # via botocore
 gevent==1.2.2
-greenlet==0.4.12          # via gevent
+    # via -r requirements.in
+greenlet==0.4.12
+    # via gevent
 gunicorn==19.7.1
-jmespath==0.9.3           # via boto3, botocore
-olefile==0.44             # via pillow
-pillow==4.2.1
+    # via -r requirements.in
+jmespath==0.9.3
+    # via
+    #   boto3
+    #   botocore
+pillow==8.1.1
+    # via -r requirements.in
 psycopg2==2.7.3
-pyjwt==1.5.2              # via djangorestframework-jwt
-python-dateutil==2.6.1    # via botocore
-pytz==2017.2              # via django
-s3transfer==0.1.10        # via boto3
-six==1.10.0               # via django-environ, django-extensions, python-dateutil
-sqlparse==0.2.3           # via django-debug-toolbar
+    # via -r requirements.in
+pyjwt==1.5.2
+    # via djangorestframework-jwt
+python-dateutil==2.6.1
+    # via botocore
+pytz==2017.2
+    # via django
+s3transfer==0.1.10
+    # via boto3
+six==1.10.0
+    # via
+    #   django-environ
+    #   django-extensions
+    #   python-dateutil
+sqlparse==0.2.3
+    # via django-debug-toolbar
